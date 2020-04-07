@@ -1,0 +1,18 @@
+<?php
+
+return [
+    'Detail_id'    => '详情id',
+    'From_user_id' => '关联用户id',
+    'User_id'      => '用户id',
+    'Type'         => '类型',
+    'Type 0'       => '后台充值',
+    'Type 6'       => '微信充值',
+    'Type 7'       => '消费',
+    'Type 16'      => '现金券兑豆',
+    'Type 17'      => '豆兑现金券',
+    'Money'        => '金额',
+    'Balance'      => '余额',
+    'Mark'         => '详细内容',
+    'Update_time'  => '更新时间',
+    'Create_time'  => '创建时间'
+];

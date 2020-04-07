@@ -1,0 +1,58 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Origin_recharge')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-origin_recharge" class="form-control" step="0.01" name="row[origin_recharge]" type="number" value="{$row.origin_recharge|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Origin_dynamic')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-origin_dynamic" class="form-control" step="0.01" name="row[origin_dynamic]" type="number" value="{$row.origin_dynamic|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Origin_static')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-origin_static" class="form-control" step="0.01" name="row[origin_static]" type="number" value="{$row.origin_static|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Origin_buy')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-origin_buy" class="form-control" step="0.01" name="row[origin_buy]" type="number" value="{$row.origin_buy|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Base')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-base" class="form-control" step="0.01" name="row[base]" type="number" value="{$row.base|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Stock')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-stock" class="form-control" step="0.01" name="row[stock]" type="number" value="{$row.stock|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Score')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-score" class="form-control" step="0.01" name="row[score]" type="number" value="{$row.score|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Create_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_time" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[create_time]" type="text" value="{$row.create_time}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
